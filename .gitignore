@@ -1,2 +1,5 @@
 .idea/*
 **/__pycache__/
+**/dist/
+**/egyptian_id_validator.egg-info/
+**/build/
