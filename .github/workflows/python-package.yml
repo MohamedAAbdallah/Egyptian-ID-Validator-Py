@@ -1,4 +1,4 @@
-name: egyptian_id_validator
+name: Test Status
 
 on:
   push:
