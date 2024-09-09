@@ -2,6 +2,7 @@
 
 **Egyptian ID Validator** is a Python package for validating Egyptian national ID numbers. It ensures that the provided ID meets the required format and checks its validity based on the structure of Egyptian IDs.
 
+[![ValidationTests](https://github.com/MohamedAAbdallah/Egyptian-ID-Validator-Py/actions/workflows/python-package.yml/badge.svg)](https://github.com/MohamedAAbdallah/Egyptian-ID-Validator-Py/actions/workflows/python-package.yml)
 ## Features
 
 - **Format Validation**: Checks if the ID is in the correct 14-digit format.
