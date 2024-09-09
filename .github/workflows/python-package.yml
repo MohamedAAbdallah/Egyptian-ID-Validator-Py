@@ -59,7 +59,7 @@ jobs:
       env:
         PYTHONPATH: ${{ github.workspace }}
       run: |
-        pytest --maxfail=1 --disable-warnings -q
+        pytest --disable-warnings -q
       shell: bash
 
     - name: Test with pytest (Windows)
@@ -67,5 +67,5 @@ jobs:
       env:
         PYTHONPATH: ${{ github.workspace }}
       run: |
-        pytest --maxfail=1 --disable-warnings -q
+        pytest --disable-warnings -q
       shell: pwsh
