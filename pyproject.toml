@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "egyptian-id-validator"
+version = "0.1.0"
+description = "A Python package for validating Egyptian National IDs."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "CC BY-NC 4.0"}
+authors = [
+    {name = "Mohamed A. Abdallah", email = "eng.mohamed.a.abdallah@gmail.com"}
+]
+homepage = "https://github.com/MohamedAAbdallah/egyptian-id-validator"
+repository = "https://github.com/MohamedAAbdallah/egyptian-id-validator"
+keywords = ["Egyptian", "ID", "validation", "national", "identifier", "Python"]
+
+[project.urls]
+"Bug Tracker" = "https://github.com/MohamedAAbdallah/egyptian-id-validator/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools]
+package-dir = {"": "src"}
