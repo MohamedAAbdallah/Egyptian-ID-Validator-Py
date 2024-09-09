@@ -1,17 +1,21 @@
 # Egyptian ID Validator
 
-**Egyptian ID Validator** is a Python package for validating Egyptian national ID numbers. It ensures that the provided ID meets the required format and checks its validity based on the structure of Egyptian IDs.
+**Egyptian ID Validator** is a Python package designed to validate Egyptian national ID numbers. It ensures the provided ID meets the required format and checks its validity based on the structural rules of Egyptian IDs.
 
 [![ValidationTests](https://github.com/MohamedAAbdallah/Egyptian-ID-Validator-Py/actions/workflows/python-package.yml/badge.svg)](https://github.com/MohamedAAbdallah/Egyptian-ID-Validator-Py/actions/workflows/python-package.yml)
+
 ## Features
 
-- **Format Validation**: Checks if the ID is in the correct 14-digit format.
+- **Format Validation**: Ensures the ID is in the correct 14-digit format.
 - **Checksum Validation**: Verifies the ID using a checksum algorithm.
-- **Component Extraction**: Extracts and returns detailed components from the ID, including year, month, day, governorate, and gender.
+- **Component Extraction**: Extracts and returns detailed components from the ID, including:
+  - **Year, Month, and Day of Birth**
+  - **Governorate of Issue**
+  - **Gender**
 
 ## Installation
 
-To install the package, you can use pip:
+To install the package, run:
 
 ```bash
 pip install egyptian-id-validator
@@ -19,7 +23,7 @@ pip install egyptian-id-validator
 
 ## Usage
 
-You can use the package directly in your Python code. Here’s an example of how to use the `validate_egyptian_id` function:
+Integrate the package in your Python projects with ease. Here’s an example of using the `validate_egyptian_id` function:
 
 ```python
 from egyptian_id_validator import validate_egyptian_id
@@ -37,7 +41,7 @@ else:
 
 ## Development Status
 
-The project is currently in the **Alpha** stage. Features and functionality may be incomplete, and APIs may change.
+This project is currently in the **Alpha** stage. Features may be incomplete, and APIs are subject to change.
 
 ## License
 
@@ -45,8 +49,17 @@ This package is licensed under the **CC BY-NC 4.0** License. See the [LICENSE](L
 
 ## Contributing
 
-Contributions are welcome! If you have suggestions, bug reports, or feature requests, please submit them via GitHub issues or pull requests.
+Contributions are welcome! Feel free to:
+- Report bugs
+- Suggest new features
+- Submit pull requests
+
+For any contributions, please use the GitHub [issues](https://github.com/MohamedAAbdallah/Egyptian-ID-Validator-Py/issues) and [pull requests](https://github.com/MohamedAAbdallah/Egyptian-ID-Validator-Py/pulls) sections.
 
 ## Author
 
-- **Mohamed A. Abdallah** - [GitHub](https://github.com/MohamedAAbdallah) - eng.mohamed.a.abdallah@gmail.com
+- **Mohamed A. Abdallah**  
+  - [GitHub Profile](https://github.com/MohamedAAbdallah)  
+  - [Email](mailto:eng.mohamed.a.abdallah@gmail.com)
+
+---
