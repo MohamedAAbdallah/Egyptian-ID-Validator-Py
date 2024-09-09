@@ -15,7 +15,7 @@ def validate_egyptian_id(national_id: str):
     # Ensure the input is a string of digits
     try:
         national_id = str(int(national_id))
-    except ValueError:
+    except (ValueError, TypeError):
         return None
 
     # Check the length and the checksum of the national ID
@@ -40,6 +40,9 @@ def validate_egyptian_id(national_id: str):
 
     components = match.groupdict()
 
+    if components['unique_number'] == '000':
+        return None
+    
     # Calculate the full year based on century code
     year = str(int(components['year']) + (1900 if components['century'] == '2' else 2000))
 
