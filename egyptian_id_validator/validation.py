@@ -28,9 +28,9 @@ def validate_egyptian_id(national_id: str):
         r'(?P<year>\d{2})'  # 2nd and 3rd digits: Year
         r'(?P<month>0[1-9]|1[0-2])'  # 4th and 5th digits: Month (01-12)
         r'(?P<day>0[1-9]|[12]\d|3[01])'  # 6th and 7th digits: Day (01-31)
-        r'(?P<governorate>0[1-9]|[1-2-3]\d|88)'  # 8th and 9th digits: Governorate code
-        r'(?P<unique_number>[0-9]{3})'  # 10th to 12th digits: Unique serial number
-        r'(?P<gender>[1-9])'  # 13th digit: Gender code
+        r'(?P<governorate>0[1-9]|[1-3]\d|88)'  # 8th and 9th digits: Governorate code
+        r'(?P<unique_number>\d{3})'  # 10th to 12th digits: Unique serial number
+        r'(?P<gender>\d)'  # 13th digit: Gender code
         r'(\d)$',  # 14th digit: Checksum
         national_id
     )
