@@ -29,7 +29,7 @@ def validate_egyptian_id(national_id: str):
         r'(?P<month>0[1-9]|1[0-2])'  # 4th and 5th digits: Month (01-12)
         r'(?P<day>0[1-9]|[12]\d|3[01])'  # 6th and 7th digits: Day (01-31)
         r'(?P<governorate>0[1-9]|[1-3]\d|88)'  # 8th and 9th digits: Governorate code
-        r'(?P<unique_number>\d{3})'  # 10th to 12th digits: Unique serial number
+        r'(?P<unique_number>(?!000)\d{3})'  # 10th to 12th digits: Unique serial number
         r'(?P<gender>\d)'  # 13th digit: Gender code
         r'(\d)$',  # 14th digit: Checksum
         national_id
@@ -39,9 +39,6 @@ def validate_egyptian_id(national_id: str):
         return None
 
     components = match.groupdict()
-
-    if components['unique_number'] == '000':
-        return None
     
     # Calculate the full year based on century code
     year = str(int(components['year']) + (1900 if components['century'] == '2' else 2000))
