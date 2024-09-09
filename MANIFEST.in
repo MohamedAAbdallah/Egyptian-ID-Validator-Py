@@ -1,0 +1,10 @@
+include README.md
+include LICENSE
+include pyproject.toml
+include requirements.txt
+
+# Include all files in the src directory
+recursive-include src *
+
+# Include all files in the tests directory
+recursive-include tests *
