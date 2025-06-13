@@ -18,8 +18,8 @@ def validate_egyptian_id(national_id: str):
     except (ValueError, TypeError):
         return None
 
-    # Check the length and the checksum of the national ID
-    if len(national_id) != 14 or 10 - (sum(int(d) for d in national_id[:-1]) % 10) != int(national_id[-1]):
+    # Check the length of the national ID
+    if len(national_id) != 14:
         return None
 
     # Regular expression to extract components from the national ID
