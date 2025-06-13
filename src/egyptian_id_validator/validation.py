@@ -11,11 +11,11 @@ def validate_checksum(n_id: str) -> bool:
     return k == int(n_id[-1])
 
 
-def validate_egyptian_id(national_id: str):
+def validate_egyptian_id(national_id: str or int) -> dict or None:
     """Validates and extracts details from an Egyptian national ID number.
     
     Args:
-        national_id (str): The national ID number to validate.
+        national_id (str or int): The national ID number to validate.
 
     Returns:
         dict or None: A dictionary containing the extracted components of the ID if valid, None otherwise.
