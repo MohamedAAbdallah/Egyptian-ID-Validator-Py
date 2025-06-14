@@ -3,14 +3,6 @@
 import re
 
 
-def validate_checksum(n_id: str) -> bool:
-    w = (2, 7, 6, 5, 4, 3, 2, 7, 6, 5, 4, 3, 2)
-    t = sum(int(d) * w[i] for i, d in enumerate(n_id[:13]))
-    k = 11 - t % 11
-    k = 0 if k == 10 else (1 if k == 11 else k)
-    return k == int(n_id[-1])
-
-
 def validate_id(national_id: str or int) -> dict or None:
     """Validates and extracts details from an Egyptian national ID number.
     
@@ -20,6 +12,14 @@ def validate_id(national_id: str or int) -> dict or None:
     Returns:
         dict or None: A dictionary containing the extracted components of the ID if valid, None otherwise.
     """
+
+    def __validate_checksum(n_id: str) -> bool:
+        w = (2, 7, 6, 5, 4, 3, 2, 7, 6, 5, 4, 3, 2)
+        t = sum(int(d) * w[i] for i, d in enumerate(n_id[:13]))
+        k = 11 - t % 11
+        k = 0 if k == 10 else (1 if k == 11 else k)
+        return k == int(n_id[-1])
+
     # Ensure the input is a string of digits
     try:
         national_id = str(int(national_id))
@@ -30,7 +30,7 @@ def validate_id(national_id: str or int) -> dict or None:
     if len(national_id) != 14:
         return None
 
-    if not validate_checksum(national_id):
+    if not __validate_checksum(national_id):
         return None
 
     # Regular expression to extract components from the national ID
