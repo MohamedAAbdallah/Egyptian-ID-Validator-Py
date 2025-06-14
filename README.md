@@ -1,8 +1,11 @@
 # Egyptian ID Validator (Python)
 
+[![GitHub tag](https://img.shields.io/github/v/tag/MohamedAAbdallah/Egyptian-ID-Validator-Py?label=latest%20tag)](https://github.com/MohamedAAbdallah/Egyptian-ID-Validator-Py/tags)
 [![PyPI version](https://img.shields.io/pypi/v/egyptian-id-validator.svg)](https://pypi.org/project/egyptian-id-validator/)
 [![Python Versions](https://img.shields.io/pypi/pyversions/egyptian-id-validator)](https://pypi.org/project/egyptian-id-validator/)
-[![Build](https://github.com/MohamedAAbdallah/Egyptian-ID-Validator-Py/actions/workflows/python-package.yml/badge.svg)](https://github.com/MohamedAAbdallah/Egyptian-ID-Validator-Py/actions/workflows/python-package.yml)
+[![Build Status](https://github.com/MohamedAAbdallah/Egyptian-ID-Validator-Py/actions/workflows/python-package.yml/badge.svg)](https://github.com/MohamedAAbdallah/Egyptian-ID-Validator-Py/actions/workflows/python-package.yml)
+[![CodeFactor](https://www.codefactor.io/repository/github/MohamedAAbdallah/Egyptian-ID-Validator-Py/badge)](https://www.codefactor.io/repository/github/MohamedAAbdallah/Egyptian-ID-Validator-Py)
+[![Last Commit](https://img.shields.io/github/last-commit/MohamedAAbdallah/Egyptian-ID-Validator-Py)](https://github.com/MohamedAAbdallah/Egyptian-ID-Validator-Py/commits/main)
 [![License](https://img.shields.io/badge/license-MIT--Custom-blue)](LICENSE.md)
 
 ---
