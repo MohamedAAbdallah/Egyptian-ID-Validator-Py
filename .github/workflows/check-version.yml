@@ -1,0 +1,28 @@
+name: Check Version Bump
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  ensure-version-bump:
+    runs-on: ubuntu-latest
+    name: Ensure version was bumped
+    steps:
+    - name: Checkout PR code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Get diff for pyproject.toml
+      id: diff
+      run: |
+        git diff origin/master -- pyproject.toml > version.diff
+        if grep -q '^+version *= *' version.diff; then
+          echo "Version bump detected ✅"
+        else
+          echo "❌ Version not bumped in pyproject.toml"
+          cat version.diff
+          exit 1
+        fi
