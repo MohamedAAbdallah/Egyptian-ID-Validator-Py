@@ -11,7 +11,7 @@ authors = [
 ]
 readme = { file = "README.md", content-type = "text/markdown" }
 requires-python = ">=3.8"
-license = "MIT License with Limited Commercial Use Restrictions"
+license = "LicenseRef-MIT-Custom"
 license-files = ["LICENSE.md"]
 
 keywords = ["egypt", "national-id", "validator", "egyptian", "citizen-id"]
