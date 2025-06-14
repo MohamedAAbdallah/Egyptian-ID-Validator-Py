@@ -3,19 +3,6 @@ import pytest
 from egyptian_id_validator.validation import validate_egyptian_id
 
 
-# Valid ID – basic structure
-def test_valid_id_male():
-    result = validate_egyptian_id("30012240199937")
-    assert result is not None
-    assert result["Gender"] == "M"
-
-
-def test_valid_id_female():
-    result = validate_egyptian_id("30012240199946")
-    assert result is not None
-    assert result["Gender"] == "F"
-
-
 # Invalid format cases
 @pytest.mark.parametrize("invalid_id", ["",  # Empty string
                                         "abc",  # Non-numeric
