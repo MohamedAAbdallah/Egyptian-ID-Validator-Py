@@ -3,7 +3,7 @@ name: Check Version Bump
 on:
   pull_request:
     branches:
-      - master
+      - main
 
 jobs:
   ensure-version-bump:
@@ -18,7 +18,7 @@ jobs:
     - name: Get diff for pyproject.toml
       id: diff
       run: |
-        git diff origin/master -- pyproject.toml > version.diff
+        git diff origin/main -- pyproject.toml > version.diff
         if grep -q '^+version *= *' version.diff; then
           echo "Version bump detected ✅"
         else
