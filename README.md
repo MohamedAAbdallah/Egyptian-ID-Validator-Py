@@ -1,29 +1,44 @@
-# Egyptian ID Validator
+# Egyptian ID Validator (Python)
 
-**Egyptian ID Validator** is a Python package designed to validate Egyptian national ID numbers. It ensures the provided ID meets the required format and checks its validity based on the structural rules of Egyptian IDs.
+[![PyPI version](https://img.shields.io/pypi/v/egyptian-id-validator.svg)](https://pypi.org/project/egyptian-id-validator/)
+[![Python Versions](https://img.shields.io/pypi/pyversions/egyptian-id-validator)](https://pypi.org/project/egyptian-id-validator/)
+[![Build](https://github.com/MohamedAAbdallah/Egyptian-ID-Validator-Py/actions/workflows/python-package.yml/badge.svg)](https://github.com/MohamedAAbdallah/Egyptian-ID-Validator-Py/actions/workflows/python-package.yml)
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/license-CC%20BY--NC%204.0-lightgrey.svg)](LICENSE.md)
 
-[![ValidationTests](https://github.com/MohamedAAbdallah/Egyptian-ID-Validator-Py/actions/workflows/python-package.yml/badge.svg)](https://github.com/MohamedAAbdallah/Egyptian-ID-Validator-Py/actions/workflows/python-package.yml)
+---
 
-## Features
+**Egyptian ID Validator** is a production-ready Python package for validating and parsing Egyptian national ID numbers.  
+It enforces the official structural rules defined by the Egyptian Ministry of Interior, including a verified but undisclosed checksum mechanism.
 
-- **Format Validation**: Ensures the ID is in the correct 14-digit format.
-- **Checksum Validation**: Verifies the ID using a checksum algorithm.
-- **Component Extraction**: Extracts and returns detailed components from the ID, including:
-  - **Year, Month, and Day of Birth**
-  - **Governorate of Issue**
-  - **Gender**
+> ℹ️ This package is part of a broader multi-language validation system.  
+> For other implementations (e.g., Java, NPM), see the [Egyptian-ID-Validator](https://github.com/MohamedAAbdallah/Egyptian-ID-Validator) mother repository.
 
-## Installation
+---
 
-To install the package, run:
+## 🔍 Features
+
+- ✅ **Format Validation** – Ensures the ID is 14 digits and correctly structured.
+- ✅ **Checksum Validation** – Verifies integrity using an official checksum method.
+- ✅ **Component Extraction** – Parses the ID into:
+  - Year, Month, and Day of Birth
+  - Governorate Name and Code
+  - Gender (Male/Female)
+
+---
+
+## 📦 Installation
+
+Install directly from PyPI:
 
 ```bash
 pip install egyptian-id-validator
-```
+````
 
-## Usage
+>Supports Python >3.8.
 
-Integrate the package in your Python projects with ease. Here’s an example of using the `validate_egyptian_id` function:
+---
+
+## 🚀 Quick Usage
 
 ```python
 from egyptian_id_validator import validate_egyptian_id
@@ -39,27 +54,36 @@ else:
     print("Invalid ID.")
 ```
 
-## Development Status
+---
 
-This project is currently in the **Alpha** stage. Features may be incomplete, and APIs are subject to change.
+## 📁 Project Status
 
-## License
-
-This package is licensed under the **CC BY-NC 4.0** License. See the [LICENSE](LICENSE.md) file for more details.
-
-## Contributing
-
-Contributions are welcome! Feel free to:
-- Report bugs
-- Suggest new features
-- Submit pull requests
-
-For any contributions, please use the GitHub [issues](https://github.com/MohamedAAbdallah/Egyptian-ID-Validator-Py/issues) and [pull requests](https://github.com/MohamedAAbdallah/Egyptian-ID-Validator-Py/pulls) sections.
-
-## Author
-
-- **Mohamed A. Abdallah**  
-  - [GitHub Profile](https://github.com/MohamedAAbdallah)  
-  - [Email](mailto:eng.mohamed.a.abdallah@gmail.com)
+This package is **stable** and currently in **production** use.
+All validation logic adheres to official specifications.
 
 ---
+
+## 🤝 Contributing
+
+Contributions are welcome — especially for:
+* Bug reports
+* Feature suggestions
+* Language porting alignment
+
+Please use [Issues](https://github.com/MohamedAAbdallah/Egyptian-ID-Validator-Py/issues) and [Pull Requests](https://github.com/MohamedAAbdallah/Egyptian-ID-Validator-Py/pulls).
+
+---
+
+## 📄 License
+
+This project is licensed under the **Creative Commons BY-NC 4.0** License.
+This means you may remix and use the package **non-commercially**, with attribution.
+See the [LICENSE.md](LICENSE.md) file for full details.
+
+---
+
+## 👤 Author
+
+**Mohamed A. Abdallah**
+
+[GitHub](https://github.com/MohamedAAbdallah) | [Email](mailto:eng.mohamed.a.abdallah@gmail.com)
