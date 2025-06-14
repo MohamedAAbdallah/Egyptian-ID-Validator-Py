@@ -1,6 +1,6 @@
 import pytest
 
-from egyptian_id_validator.validation import validate_egyptian_id
+from src.egyptian_id_validator.validation import validate_egyptian_id
 
 
 # Valid ID – basic structure
