@@ -52,7 +52,8 @@ Whether you're here to report a bug, suggest a feature, or contribute code. Your
 
 ## 🔐 License and Respect
 
-By contributing, you agree to license your code under the [CC BY-NC 4.0 License](LICENSE.md) and respect the project’s **non-commercial scope**.
+By contributing to this project, you agree to license your contributions under the project's custom [MIT-based license with commercial restrictions](LICENSE.md).  
+You also acknowledge and respect the project's goals: open for community and developer use, but not to be repackaged, sold, or monetized as a core business component without explicit permission.
 
 ---
 
