@@ -4,14 +4,15 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "egyptian-id-validator"
-version = "0.3.5"
+version = "0.4.0"
 description = "A Python package for validating Egyptian National IDs."
 authors = [
     { name = "Mohamed A. Abdallah", email = "eng.mohamed.a.abdallah@gmail.com" }
 ]
 readme = { file = "README.md", content-type = "text/markdown" }
 requires-python = ">=3.8"
-license = { text = "CC BY-NC 4.0" }
+license = { text = "MIT License with Limited Commercial Use Restrictions" }
+license-files = ["LICENSE.md"]
 
 keywords = ["egypt", "national-id", "validator", "egyptian", "citizen-id"]
 

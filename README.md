@@ -76,9 +76,13 @@ Please use [Issues](https://github.com/MohamedAAbdallah/Egyptian-ID-Validator-Py
 
 ## 📄 License
 
-This project is licensed under the **Creative Commons BY-NC 4.0** License.
-This means you may remix and use the package **non-commercially**, with attribution.
-See the [LICENSE.md](LICENSE.md) file for full details.
+This project is licensed under a custom [MIT License with Limited Commercial Use Restrictions](LICENSE.md).
+
+You are free to use, modify, and integrate the package — including in commercial projects — **as long as**:
+- You provide proper attribution
+- You do **not** sell, sublicense, or rely on this package as the **core functionality** or **main value** of a monetized product or service without prior permission
+
+See the [LICENSE.md](LICENSE.md) file for full terms.
 
 ---
 
