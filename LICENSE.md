@@ -1,6 +1,6 @@
 ### **Egyptian-ID-Validator License**
 
-**Copyright (c) 2024 Mohamed A. Abdallah**
+**Copyright (c) 2025 Mohamed A. Abdallah**
 
 **License Overview:**
 
