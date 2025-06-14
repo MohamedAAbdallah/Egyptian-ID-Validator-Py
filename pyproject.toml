@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "egyptian-id-validator"
-version = "0.3.4"
+version = "0.3.5"
 description = "A Python package for validating Egyptian National IDs."
 authors = [
     { name = "Mohamed A. Abdallah", email = "eng.mohamed.a.abdallah@gmail.com" }
