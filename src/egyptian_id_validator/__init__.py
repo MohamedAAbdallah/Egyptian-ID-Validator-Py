@@ -1,5 +1,8 @@
-# egyptian_id_validator/__init__.py
+from .validation import validate_id
 
-from .validation import validate_egyptian_id
+__name__ = "Egyptian ID Validator"
+__author__ = "Mohamed A. Abdallah"
 
-__all__ = ['validate_egyptian_id']
+validate = validate_id  ## alias for clarity
+
+__all__ = ['validate_id', 'validate']
