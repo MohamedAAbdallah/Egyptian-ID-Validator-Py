@@ -29,7 +29,9 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/MohamedAAbdallah/Egyptian-ID-Validator-Py"
+Homepage = "https://github.com/MohamedAAbdallah/Egyptian-ID-Validator"
+Repository = "https://github.com/MohamedAAbdallah/Egyptian-ID-Validator-Py"
+Issues = "https://github.com/MohamedAAbdallah/Egyptian-ID-Validator-Py/issues"
 
 [project.optional-dependencies]
 dev = ["pytest", "flake8", "build", "twine"]
