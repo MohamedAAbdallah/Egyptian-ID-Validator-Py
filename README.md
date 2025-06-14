@@ -3,7 +3,7 @@
 [![PyPI version](https://img.shields.io/pypi/v/egyptian-id-validator.svg)](https://pypi.org/project/egyptian-id-validator/)
 [![Python Versions](https://img.shields.io/pypi/pyversions/egyptian-id-validator)](https://pypi.org/project/egyptian-id-validator/)
 [![Build](https://github.com/MohamedAAbdallah/Egyptian-ID-Validator-Py/actions/workflows/python-package.yml/badge.svg)](https://github.com/MohamedAAbdallah/Egyptian-ID-Validator-Py/actions/workflows/python-package.yml)
-[![License: CC BY-NC 4.0](https://img.shields.io/badge/license-CC%20BY--NC%204.0-lightgrey.svg)](LICENSE.md)
+[![License](https://img.shields.io/badge/license-MIT--Custom-blue)](LICENSE.md)
 
 ---
 
