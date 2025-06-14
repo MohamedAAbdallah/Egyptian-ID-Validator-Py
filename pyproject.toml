@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools", "wheel"]
+requires = ["setuptools>=61", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -9,12 +9,30 @@ description = "A Python package for validating Egyptian National IDs."
 authors = [
     { name = "Mohamed A. Abdallah", email = "eng.mohamed.a.abdallah@gmail.com" }
 ]
-readme = "README.md"
+readme = { file = "README.md", content-type = "text/markdown" }
 requires-python = ">=3.8"
 license = { text = "CC BY-NC 4.0" }
 
+keywords = ["egypt", "national-id", "validator", "egyptian", "citizen-id"]
+
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "License :: Other/Proprietary License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12"
+]
+
 [project.urls]
 "Homepage" = "https://github.com/MohamedAAbdallah/Egyptian-ID-Validator-Py"
+
+[project.optional-dependencies]
+dev = ["pytest", "flake8", "build", "twine"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
