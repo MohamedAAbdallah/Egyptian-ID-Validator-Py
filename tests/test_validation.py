@@ -1,6 +1,6 @@
 import pytest
 
-from egyptian_id_validator.validation import validate_egyptian_id
+from egyptian_id_validator import validate_id
 
 
 # Invalid format cases
@@ -13,18 +13,18 @@ from egyptian_id_validator.validation import validate_egyptian_id
                                         None,  # None input
                                         ])
 def test_invalid_formats(invalid_id):
-    assert validate_egyptian_id(invalid_id) is None
+    assert validate_id(invalid_id) is None
 
 
 # Invalid checksum
 def test_invalid_checksum():
-    assert validate_egyptian_id("30012240199930") is None
+    assert validate_id("30012240199930") is None
 
 
 # Invalid century digit
 @pytest.mark.parametrize("nid", ["00012240199930", "10012240199939", "40012240199936"])
 def test_invalid_century(nid):
-    assert validate_egyptian_id(nid) is None
+    assert validate_id(nid) is None
 
 
 # Invalid months
@@ -33,21 +33,21 @@ def test_invalid_century(nid):
                                  "30099240199932",  # Month 99
                                  ])
 def test_invalid_months(nid):
-    assert validate_egyptian_id(nid) is None
+    assert validate_id(nid) is None
 
 
 # Invalid days
 @pytest.mark.parametrize("nid", ["30001320199935"  # Day 00
                                  ])
 def test_invalid_days(nid):
-    assert validate_egyptian_id(nid) is None
+    assert validate_id(nid) is None
 
 
 # Invalid governorate
 def test_invalid_governorate():
-    assert validate_egyptian_id("30012249999930") is None
+    assert validate_id("30012249999930") is None
 
 
 # Invalid unique number
 def test_invalid_unique_number():
-    assert validate_egyptian_id("30012240000035") is None
+    assert validate_id("30012240000035") is None
