@@ -4,6 +4,11 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - '*.md'
+      - '.gitignore'
+      - '.github/**'
+      - 'tests/**'
 
 jobs:
   publish:
