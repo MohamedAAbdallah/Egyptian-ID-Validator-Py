@@ -41,7 +41,7 @@ pip install egyptian-id-validator
 ## 🚀 Quick Usage
 
 ```python
-from egyptian_id_validator import validate_egyptian_id
+from egyptian_id_validator.validation import validate_egyptian_id
 
 id_number = "20001012345678"  # Replace with the ID you want to validate
 result = validate_egyptian_id(id_number)
